@@ -9,6 +9,9 @@ let tableTag = document.querySelector('table');
 let tdTags = document.querySelectorAll('thead td');
 let trTag = document.querySelector('thead tr');
 
+/* --- Fixing head title --- */
+document.title = 'Fruits & Vegetables Corp';
+
 /* --- Adding main.css too <HEAD> --- */
 let head = document.head;
 let cssFile = document.createElement('link');
