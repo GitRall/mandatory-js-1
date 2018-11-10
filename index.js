@@ -18,15 +18,16 @@ let cssFile = document.createElement('link');
 head.appendChild(cssFile);
 cssFile.setAttribute('rel', 'stylesheet');
 cssFile.setAttribute('type', 'text/css');
-cssFile.setAttribute('href', 'main.css')
+cssFile.setAttribute('href', 'main.css');
 
 /* --- Fixing h1 text content --- */
-h1Tag.textContent = 'Fruits & Vegetables Corp'
+h1Tag.textContent = 'Fruits & Vegetables Corp';
 
 /* --- Fixing a text content --- */
 for(let x of aTags){
   if(x.textContent === 'Bananas'){
-    x.textContent = 'Vegetables'
+    x.textContent = 'Vegetables';
+    x.setAttribute('href', '#vegetables');
   }
 }
 
