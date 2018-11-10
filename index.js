@@ -32,8 +32,6 @@ for(let x of aTags){
 }
 
 /* --- Fixing section order  --- */
-main.removeChild(aboutSection);
-main.removeChild(contactSection);
 main.appendChild(aboutSection);
 main.appendChild(contactSection);
 
@@ -58,8 +56,6 @@ trTag.replaceChild(thEmail, tdTags[1]);
 /* --- Fixing contact content order --- */
 contactH2 = document.createElement('h2');
 contactH2.textContent = 'Contact';
-contactSection.removeChild(contactP);
-contactSection.removeChild(tableTag);
 contactSection.appendChild(contactH2);
 contactSection.appendChild(contactP);
 contactSection.appendChild(tableTag);
